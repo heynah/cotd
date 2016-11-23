@@ -8,6 +8,8 @@ class Inventory extends React.Component {
         <h2>Inventory</h2>
       {/*method must be passed down one more level*/}
         <AddFishForm addFish={this.props.addFish}/>   
+      {/*method must come from where our STATE does (itc App)*/}
+        <button onClick={this.props.loadSamples}>Load Sample Fishes</button>
       </div>
 		)
 	}
