@@ -20,10 +20,10 @@ class StorePicker extends React.Component {
     //'storeInput' because it was done with ref is a DOM element
     const storeId = this.storeInput.value;
     //transition using context methods
-    this.context.router.transitionTo('/store/${storeId}');
+    this.context.router.transitionTo('/store/'+ storeId);
 
   }
-
+ 
 	render() {
     //has 'this' bound
 		return (
