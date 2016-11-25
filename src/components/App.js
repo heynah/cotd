@@ -105,9 +105,17 @@ class App extends React.Component {
           </ul>
 				</div>
       {/*just passing the state objects you need whole state could be too big*/}
-				<Order params={this.props.params} fishes={this.state.fishes} order={this.state.order}/>
+				<Order 
+          params={this.props.params} 
+          fishes={this.state.fishes} 
+          order={this.state.order}
+        />
       {/*pass the fn (as PROP) down to the comp where you want to use the method(call it)*/}
-				<Inventory addFish={this.addFish} loadSamples={this.loadSamples} />
+				<Inventory 
+          fishes={this.state.fishes} 
+          addFish={this.addFish} 
+          loadSamples={this.loadSamples} 
+        />
 
 			</div>
 		)
